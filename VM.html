@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ICC Vision and Mission</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<style>
+  body {
+    background: linear-gradient(to bottom right, #00274d, #00509e);
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+  }
+
+  .container {
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    margin-top: 30px;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+    transition: transform 0.3s ease;
+  }
+
+  .container:hover {
+    transform: scale(1.01);
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    color: #fff;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+  }
+
+  .text {
+    font-size: 1.2rem;
+    color: #cce6ff;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    transition: color 0.3s ease;
+  }
+
+  .solid-button {
+    background-color: #0077b6;
+    border: 2px solid #023e8a;
+    padding: 10px 30px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .solid-button:hover {
+    background-color: #023e8a;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #023e8a;
+  }
+
+  .solid-button:active {
+    transform: scale(0.97);
+  }
+
+  .highlight-box {
+    border: 2px solid #00509e;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+  }
+
+  .highlight-box:hover {
+    box-shadow: 0 0 20px #0077b6;
+    transform: scale(1.02);
+  }
+
+  .footer {
+    background-color: #00509e;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 0 20px 20px;
+    margin-top: 20px;
+    width: 100%;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);
+  }
+</style>
+</head>
+
+<body>
+
+<!-- Container -->
+<div class="container">
+  <img src="icc logo.png" alt="ICC Logo" class="mx-auto mb-4 w-48 h-48 object-contain transition-transform duration-300 hover:scale-110">
+  <h1 class="title">ICC Vision and Mission</h1>
+
+  <!-- Vision Section -->
+  <div class="highlight-box">
+    <h2 class="section-title">Vision</h2>
+    <p class="text">A life-giving and innovating school-community committed to transforming ICCnians into Christ-centered members of society.</p>
+  </div>
+
+  <!-- Mission Section -->
+  <div class="highlight-box">
+    <h2 class="section-title">Mission</h2>
+    <p class="text">
+      ICC commits to:<br>
+      • Strengthen God-filled friendship;<br>
+      • Facilitate Development Towards Transformation;<br>
+      • Practice Christian Leadership;<br>
+      • Develop Environmentally Caring Global Leaders;<br>
+    </p>
+  </div>
+
+  <!-- Back to Menu Button -->
+  <button onclick="window.location.href='menu.html'" class="solid-button">Back to Menu</button>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <p>&copy; 2025 Immaculate Conception College. All rights reserved.</p>
+</div>
+
+</body>
+</html>

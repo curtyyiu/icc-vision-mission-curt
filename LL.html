@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Love Letter</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<style>
+  body {
+    background: linear-gradient(to bottom, #ff4757, #ff6b81, #ff7f9e, #ff99b5);
+    font-family: 'Georgia', serif;
+    color: #6b0f1a;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevents scrolling */
+    margin: 0;
+  }
+
+  .fade-in {
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .letter-container {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 800px;
+    max-height: 70vh; /* Prevents overflow */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    border: 2px solid #ff6b81;
+    text-align: justify;
+    line-height: 1.8;
+    overflow-y: auto; /* Allows internal scroll if needed */
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Allows absolute positioning for text */
+  }
+
+  .title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    margin-top: -20px; /* Moves title higher */
+    color: #ffffff;
+  }
+
+  .solid-button {
+    background-color: #ff6b81;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    color: #fff;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px; /* Adds space above the button */
+    align-self: center;
+  }
+
+  .solid-button:hover {
+    background-color: #ff4757;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ff6b81;
+  }
+
+  footer {
+    background-color: #6b0f1a;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .dear {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 1.2rem;
+    color: #6b0f1a;
+    font-weight: bold;
+  }
+
+  .love {
+    position: absolute;
+    bottom: 10px; /* Lowered the position */
+    left: 30px;
+    font-size: 1.2rem;
+    color: #6b0f1a;
+    font-weight: bold;
+  }
+</style>
+</head>
+
+<body>
+
+<h1 class="title fade-in"> Love Letter </h1>
+
+<div class="letter-container fade-in">
+  <div class="dear">Dear Mom and Dad,</div>
+  <p style="margin-top: 40px;">I just wanted to take a moment to tell you both how much I love you. I know things aren’t always easy, and life has a way of making everything feel complicated, but my love for you will always stay simple and true. Mom, thank you for everything you do—the big things, the little things, and all the moments in between. Your strength inspires me, and your love makes even the hardest days feel bearable. I’m so grateful for every hug, every late-night talk, and every sacrifice you’ve made for me. You’re my hero in so many ways. Dad, I miss you more than I can say. I think about all the times you’ve been there for me, teaching me things and reminding me to keep going, no matter what. Your words stay with me, and I carry them like a promise that I’ll make you proud someday. Even if things are different now, I want you both to know that my love doesn’t change. No matter where life takes us, I’ll always be thankful for the family we are and the love we share. I hope one day we can all find a way to smile together again, even if it takes time. Thank you for being my parents. I love you both, always and forever.</p>
+  <div class="love">Love,<br>Curt</div>
+  <a href="menu.html" class="solid-button">Back to Menu</a>
+</div>
+
+<footer>
+  <p>&copy; 2025 Immaculate Conception College. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
