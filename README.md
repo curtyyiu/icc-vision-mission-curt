@@ -1,0 +1,1 @@
+# icc-vision-mission-curt
